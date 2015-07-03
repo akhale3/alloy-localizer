@@ -3,12 +3,12 @@
   "version": "0.0.1",
   "description": "A Titanium Alloy internationalization plugin that traverses the project directory to create an i18n/en subfolder.",
   "main": "index.js",
-  "scripts": {
-    "test": "mocha tests/",
-    "main": "index.js"
-  },
   "devDependencies": {
     "chai": "^3.0.0"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/mocha tests/",
+    "main": "index.js"
   },
   "repository": {
     "type": "git",
