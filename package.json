@@ -4,11 +4,14 @@
   "description": "A Titanium Alloy internationalization plugin that traverses the project directory to create an i18n/en subfolder.",
   "main": "index.js",
   "devDependencies": {
-    "chai": "^3.0.0"
+    "chai": "^3.0.0",
+    "codeclimate-test-reporter": "^0.1.0",
+    "istanbul": "^0.3.17"
   },
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha tests/",
-    "main": "index.js"
+    "main": "index.js",
+    "cover": "node ./node_modules/istanbul/lib/cli.js cover tests/test.js"
   },
   "repository": {
     "type": "git",
