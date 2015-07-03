@@ -7,7 +7,7 @@
     "chai": "^3.0.0"
   },
   "scripts": {
-    "test": "./node_modules/mocha/mocha tests/",
+    "test": "./node_modules/mocha/bin/mocha tests/",
     "main": "index.js"
   },
   "repository": {
