@@ -1,0 +1,31 @@
+{
+  "name": "alloy-localizer",
+  "version": "0.0.1",
+  "description": "A Titanium Alloy internationalization plugin that traverses the project directory to create an i18n/en subfolder.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "main": "index.js"
+  },
+  "devDependencies": {
+    "chai": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anishkhale/alloy-localizer"
+  },
+  "keywords": [
+    "titanium",
+    "alloy",
+    "internationalization",
+    "localization",
+    "string",
+    "manipulation"
+  ],
+  "author": "Anish Khale",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anishkhale/alloy-localizer/issues"
+  },
+  "homepage": "https://github.com/anishkhale/alloy-localizer"
+}
