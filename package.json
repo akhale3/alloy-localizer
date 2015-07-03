@@ -11,7 +11,7 @@
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha tests/",
     "main": "index.js",
-    "cover": "node ./node_modules/istanbul/lib/cli.js cover tests/test.js"
+    "cover": "node ./node_modules/istanbul/lib/cli.js cover index.js"
   },
   "repository": {
     "type": "git",
