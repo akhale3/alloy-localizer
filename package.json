@@ -11,8 +11,7 @@
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha tests/",
     "main": "index.js",
-    "cover": "node ./node_modules/istanbul/lib/cli.js cover index.js",
-    "codeclimate-test-reporter": "./node_modules/codeclimate-test-reporter/bin/codeclimate < ./coverage/lcov.info"
+    "cover": "node ./node_modules/istanbul/lib/cli.js cover index.js"
   },
   "repository": {
     "type": "git",
