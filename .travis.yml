@@ -4,6 +4,4 @@ node_js:
 addons:
   code_climate:
     repo_token: 446459bcd16f200a114ec8bd18f3214555ae084433a19b96417774a4e6eabbdd
-after_script:
-  - ./node_modules/codeclimate-test-reporter/bin/codeclimate < ./coverage/lcov.info
-  - ./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage
+script: npm run-script coverall

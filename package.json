@@ -10,7 +10,9 @@
   },
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha tests/",
-    "main": "index.js"
+    "main": "index.js",
+    "codeclimate-test-reporter": "./node_modules/codeclimate-test-reporter/bin/codeclimate < ./coverage/lcov.info",
+    "coverall": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "repository": {
     "type": "git",
