@@ -10,7 +10,7 @@
     "coveralls": "^2.11.2"
   },
   "scripts": {
-    "test": "mocha && istanbul cover node_modules/mocha/bin/_mocha -- -R spec",
+    "test": "mocha && istanbul report text-summary lcov",
     "main": "index.js"
   },
   "repository": {
