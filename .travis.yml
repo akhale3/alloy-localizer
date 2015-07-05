@@ -4,6 +4,5 @@ node_js:
 addons:
   code_climate:
     repo_token: 446459bcd16f200a114ec8bd18f3214555ae084433a19b96417774a4e6eabbdd
-after_script: NODE_ENV=test istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage
-#after_success:
-#  - "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
+after_success:
+  - "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
