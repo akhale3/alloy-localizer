@@ -6,13 +6,12 @@
   "devDependencies": {
     "chai": "^3.0.0",
     "codeclimate-test-reporter": "^0.1.0",
-    "istanbul": "^0.3.17"
+    "istanbul": "^0.3.17",
+    "coveralls": "^2.11.2"
   },
   "scripts": {
     "test": "mocha && istanbul report text-summary lcov",
-    "main": "index.js",
-    "codeclimate-test-reporter": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/codeclimate-test-reporter/bin/codeclimate.js && rm -rf ./coverage",
-    "coverall": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+    "main": "index.js"
   },
   "repository": {
     "type": "git",
